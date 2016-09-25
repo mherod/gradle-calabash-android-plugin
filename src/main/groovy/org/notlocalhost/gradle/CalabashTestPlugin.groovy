@@ -44,9 +44,9 @@ class CalabashTestPlugin implements Plugin<Project> {
 
             def apkName = ""
             if(projectFlavorName != "") {
-                apkName = "${project.name}-${projectFlavorName.toLowerCase()}-${buildTypeName.toLowerCase()}-unaligned.apk"
+                apkName = "${project.name}-${projectFlavorName.toLowerCase()}-${buildTypeName.toLowerCase()}.apk"
             } else {
-                apkName = "${project.name}-${buildTypeName.toLowerCase()}-unaligned.apk"
+                apkName = "${project.name}-${buildTypeName.toLowerCase()}.apk"
             }
 
             project.logger.debug "==========================="
